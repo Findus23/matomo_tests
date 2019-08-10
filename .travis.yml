@@ -2,7 +2,7 @@ language: python
 python:
   - "3.7"
 install:
-  - git clone https://github.com/matomo-org/matomo.git
+  - git clone https://github.com/matomo-org/matomo.git --depth=1 --recurse-submodules
   - cp config.travis.py config.py
 script:
   - python translation_placeholders.py
